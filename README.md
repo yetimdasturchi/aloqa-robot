@@ -10,7 +10,8 @@
   * [Danat](#danat)
 # Aloqa robot
 Ushbu bot Namangan viloyati, Kosonsoy tumani, aholisining raqamli turmush tarzini rivojlantirish maqsadida ishlab chiqilgan. O'zbekistondagi boshqa hududlarda ham shunday jarayonga hissa qo'shish maqsadida bot kodlari ochiqlanmoqda. 
- ![enter image description here](https://i.ibb.co/F6bW3FF/photo-2022-07-01-05-02-09.jpg)
+
+ ![screen](https://i.ibb.co/F6bW3FF/photo-2022-07-01-05-02-09.jpg)
 
 ## Xususiyatlar
 - Guruhlar asosida kontaktlarni boshqarish
