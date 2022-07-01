@@ -1,0 +1,1 @@
+# Bildirishnomalar fayllari uchun papka
