@@ -50,6 +50,7 @@ if (!empty($_GET['act'])) {
         'website' => '',
         'description' => '',
         'services' => '',
+        'working_hours' => '',
         'rating' => 0,
         'status' => FALSE,
       ];
@@ -115,6 +116,7 @@ if (!empty($_GET['act'])) {
         'address' => 'Manzil',
         'email' => 'E-mail',
         'website' => 'veb-sayt',
+        'working_hours' => 'Ish vaqti',
         'description' => 'Tasnif',
         'services' => 'Xizmatlar',
         'rating' => 'Reyting',
@@ -148,6 +150,7 @@ if (!empty($_GET['act'])) {
       $html .= '<div class="mb-3"><label for="email" class="form-label">E-mail</label><input type="email" class="form-control" name="email" id="email" placeholder="" value="'.$contact['email'].'"></div>';
       $html .= '<div class="mb-3"><label for="website" class="form-label">Veb-site</label><input type="url" class="form-control" name="website" id="website" placeholder="" value="'.$contact['website'].'"></div>';
       $html .= '<div class="mb-3"><label for="services" class="form-label">Xizmatlar</label><input type="text" class="form-control" name="services" id="services" placeholder="" value="'.$contact['services'].'"></div>';
+      $html .= '<div class="mb-3"><label for="working_hours" class="form-label">Ish vaqti</label><input type="text" class="form-control" name="working_hours" id="working_hours" placeholder="" value="'.$contact['working_hours'].'"></div>';
       $html .= '<div class="mb-3"><label for="description" class="form-label">Tasnif</label><textarea class="form-control" name="description" id="description" rows="3">'.$contact['description'].'</textarea></div>';
       $html .= '<div class="mb-3"><label class="form-label">Bo‘lim</label><select name="status" class="form-select"><option value="1" '.( ($contact['status'] == 1) ? 'selected' : '' ).'>Tasdiqlangan</option><option value="0" '.( ($contact['status'] == 0) ? 'selected' : '' ).'>Tasdiqlanmagan</option></select></div>';
       $html .= '<div class="d-grid gap-2"><button class="btn btn-primary" type="submit">Kiritish</button></div>';
@@ -298,6 +301,10 @@ if(isset($_COOKIE['b533dade']) && $_COOKIE['b533dade'] == '1df8279147d64f18f4d39
           <div class="mb-3">
             <label for="services" class="form-label">Xizmatlar</label>
             <input type="text" class="form-control" name="services" id="services" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="working_hours" class="form-label">Ish vaqti</label>
+            <input type="text" class="form-control" name="working_hours" id="working_hours" placeholder="">
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">Tasnif</label>
