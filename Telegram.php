@@ -16,7 +16,7 @@ class Telegram {
     private $bot_url = "/bot";
     private $file_url = "/file";
     private $token = null;
-    private $error_reporting = true;
+    private $error_reporting = false;
     private $parse_mode = 'html';
     private $action = '';
     private $settings = [];
@@ -216,7 +216,6 @@ class Telegram {
     }
 
     public function request($action, $content = []){
-
         if( !is_null($this->reply_markup) ){
             $content['reply_markup'] = $this->reply_markup;
         }
@@ -224,7 +223,7 @@ class Telegram {
         if( !is_null($this->reply_markup) && array_key_exists('inline_keyboard', $content['reply_markup']) && count( $content['reply_markup']['inline_keyboard'] ) > 0){
             unset( $content['reply_markup']['keyboard'] );
         }
-
+        $this->log($content);
         $url = $this->url . $this->bot_url . $this->token . '/' . $action;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
